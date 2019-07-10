@@ -13,5 +13,11 @@ puts "----------"
 
 # Your code goes here ...
 puts "Please enter a store name !!!!!!!!"
-name = gets
-puts name
+name = gets()
+newStore = Store.create(name: name)
+puts(newStore.errors.messages)
+
+
+
+
+
