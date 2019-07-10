@@ -5,4 +5,5 @@ class Employee < ActiveRecord::Base
     validates :hourly_rate, numericality: {greater_than: 40}
     validates :hourly_rate, numericality: {lesser_than: 200}
     validates :store, presence: true
+    validates :store, length: {minimum: 3}
 end

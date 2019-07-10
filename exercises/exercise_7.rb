@@ -12,3 +12,6 @@ puts "----------"
 
 
 # Your code goes here ...
+puts "Please enter a store name !!!!!!!!"
+name = gets
+puts name
